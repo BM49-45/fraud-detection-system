@@ -252,18 +252,18 @@ def login_page():
             else:
                 st.warning("⚠️ Please enter both username and password")
     
-    # Demo credentials
-    with st.expander("ℹ️ Demo Credentials", expanded=True):
-        st.markdown("""
-        **Default Admin Account:**
-        - 👤 Username: `admin`
-        - 🔒 Password: `admin123`
+    # # Demo credentials
+    # with st.expander("ℹ️ Demo Credentials", expanded=True):
+    #     st.markdown("""
+    #     **Default Admin Account:**
+    #     - 👤 Username: `admin`
+    #     - 🔒 Password: `admin123`
         
-        **🔐 Password Recovery:**
-        - Forgot password? Use the **Forgot Password** section above
-        - Contact system administrator for production systems
-        - Never share your password with anyone
-        """)
+    #     **🔐 Password Recovery:**
+    #     - Forgot password? Use the **Forgot Password** section above
+    #     - Contact system administrator for production systems
+    #     - Never share your password with anyone
+    #     """)
     
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1576,4 +1576,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
