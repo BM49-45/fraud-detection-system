@@ -219,16 +219,16 @@ def login_page():
                 - 🏢 Office: IT Department, Writing Business Solutions
                 """)
         
-        with col2:
-            if st.button("🔄 Reset Demo", use_container_width=True, help="Reset to default demo credentials"):
-                st.warning("""
-                **Default Demo Credentials:**
-                - 👤 Username: `admin`
-                - 🔒 Password: `admin123`
+        # with col2:
+        #     if st.button("🔄 Reset Demo", use_container_width=True, help="Reset to default demo credentials"):
+        #         st.warning("""
+        #         **Default Demo Credentials:**
+        #         - 👤 Username: `admin`
+        #         - 🔒 Password: `admin123`
                 
-                **⚠️ For production use, contact admin to reset your password.**
-                """)
-        st.markdown('</div>', unsafe_allow_html=True)
+        #         **⚠️ For production use, contact admin to reset your password.**
+        #         """)
+        # st.markdown('</div>', unsafe_allow_html=True)
     
     # Main Login Form
     with st.form("login_form"):
@@ -1554,7 +1554,7 @@ def main_app():
     st.markdown("---")
     st.markdown(
         "<div style='text-align: center; color: #666;'>"
-        f"🔒 Secure System | 👤 {st.session_state.user['username']} | 🏛️ Ministry of Finance Tanzania | © 2024"
+        f"🔒 Secure System | 👤 {st.session_state.user['username']} | 🏛️ Ministry of Finance Tanzania | © 2025"
         "</div>",
         unsafe_allow_html=True
     )
@@ -1574,4 +1574,5 @@ def main():
         main_app()
 
 if __name__ == "__main__":
+
     main()
