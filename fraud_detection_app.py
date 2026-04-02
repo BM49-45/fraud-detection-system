@@ -237,7 +237,7 @@ def login_page():
         
         col1, col2, col3 = st.columns([1,2,1])
         with col2:
-            login_button = st.form_submit_button("🚀 Login", use_container_width=True)
+            login_button = st.form_submit_button("Login", use_container_width=True)
         
         if login_button:
             if username and password:
